@@ -13,6 +13,7 @@
 		FA62D4A420CDD97700459150 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA62D4A220CDD97700459150 /* Main.storyboard */; };
 		FA62D4A620CDD97800459150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA62D4A520CDD97800459150 /* Assets.xcassets */; };
 		FA62D4A920CDD97800459150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA62D4A720CDD97800459150 /* LaunchScreen.storyboard */; };
+		FA62D4B120CDDBDF00459150 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA62D4B020CDDBDF00459150 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FA62D4A520CDD97800459150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA62D4A820CDD97800459150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA62D4AA20CDD97800459150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA62D4B020CDDBDF00459150 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				FA62D4A520CDD97800459150 /* Assets.xcassets */,
 				FA62D4A720CDD97800459150 /* LaunchScreen.storyboard */,
 				FA62D4AA20CDD97800459150 /* Info.plist */,
+				FA62D4B020CDDBDF00459150 /* GoogleService-Info.plist */,
 			);
 			path = landscaperonline;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA62D4A920CDD97800459150 /* LaunchScreen.storyboard in Resources */,
+				FA62D4B120CDDBDF00459150 /* GoogleService-Info.plist in Resources */,
 				FA62D4A620CDD97800459150 /* Assets.xcassets in Resources */,
 				FA62D4A420CDD97700459150 /* Main.storyboard in Resources */,
 			);
@@ -369,7 +373,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 66759VY892;
 				INFOPLIST_FILE = landscaperonline/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.antoniocortes.landscaperonline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -385,7 +392,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 66759VY892;
 				INFOPLIST_FILE = landscaperonline/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.antoniocortes.landscaperonline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
