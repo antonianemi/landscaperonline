@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3sg-Nj-1sD">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Picture-->
+        <scene sceneID="aZN-7y-xJB">
+            <objects>
+                <viewController id="3sg-Nj-1sD" customClass="VCPicture" customModule="landscaperonline" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rCc-3l-NCg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DRG-fX-WY3">
+                                <rect key="frame" x="67.666666666666686" y="70" width="240" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="4eB-hb-r0f"/>
+                                    <constraint firstAttribute="height" constant="270" id="utx-hE-AIX"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UV4-tk-Vaz">
+                                <rect key="frame" x="162" y="479" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.17823301389999999" green="0.71222990750000004" blue="0.48153346320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4jD-g3-EXz"/>
+                                    <constraint firstAttribute="width" constant="50" id="wqt-7X-M0i"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DRG-fX-WY3" firstAttribute="top" secondItem="Ywx-cC-J0J" secondAttribute="top" constant="26" id="HhQ-yn-xyB"/>
+                            <constraint firstItem="UV4-tk-Vaz" firstAttribute="top" secondItem="DRG-fX-WY3" secondAttribute="bottom" constant="139" id="Jpf-Rm-gSw"/>
+                            <constraint firstItem="UV4-tk-Vaz" firstAttribute="leading" secondItem="Ywx-cC-J0J" secondAttribute="leading" constant="162" id="els-38-a8X"/>
+                            <constraint firstItem="DRG-fX-WY3" firstAttribute="centerX" secondItem="Ywx-cC-J0J" secondAttribute="centerX" id="jWG-cI-qro"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ywx-cC-J0J"/>
+                    </view>
+                    <connections>
+                        <outlet property="img_Profile" destination="DRG-fX-WY3" id="m7i-ng-ZQc"/>
+                        <outlet property="view_capture" destination="UV4-tk-Vaz" id="oCd-Fp-oDM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X7V-Yk-bKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88.799999999999997" y="148.52216748768473"/>
+        </scene>
+    </scenes>
+</document>

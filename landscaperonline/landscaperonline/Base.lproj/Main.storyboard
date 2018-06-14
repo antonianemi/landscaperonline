@@ -127,6 +127,14 @@
             </objects>
             <point key="canvasLocation" x="784.79999999999995" y="-110.19490254872565"/>
         </scene>
+        <!--Onboarding-->
+        <scene sceneID="NtW-Gy-nkJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Onboarding" id="t77-gr-t8a" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grb-bh-CMI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="580"/>
+        </scene>
         <!--SingUP-->
         <scene sceneID="UNf-Bg-tvG">
             <objects>
@@ -202,6 +210,7 @@
                         <outlet property="txt_confirm_password" destination="bLa-Bf-OXf" id="qPz-Nu-0L5"/>
                         <outlet property="txt_email" destination="46c-mi-0YR" id="29K-ML-w8I"/>
                         <outlet property="txt_password" destination="mZu-dm-gTX" id="nPf-Ch-gYk"/>
+                        <segue destination="t77-gr-t8a" kind="show" identifier="onboardingSegue" id="TSm-Sl-0g3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w9f-kZ-4HC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -216,6 +225,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RPR-UJ-U9v">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
