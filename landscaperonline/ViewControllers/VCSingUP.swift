@@ -7,14 +7,13 @@
 //
 import UIKit
 import Firebase
-class VCSingUP: UIViewController {
+class VCSingUP: BaseViewController {
     @IBOutlet weak var txt_email: UITextField!
     @IBOutlet weak var txt_password: UITextField!
     @IBOutlet weak var txt_confirm_password: UITextField!
     @IBOutlet weak var btn_SingUp: UIButton!
     @IBAction func btn_sing_up(_ sender: Any) {
         guard let email = txt_email.text,let password = txt_password.text, let password2 = txt_confirm_password.text else { return }
-        
         if password2 != password{
             //error the password does not match
             return
@@ -24,7 +23,7 @@ class VCSingUP: UIViewController {
             
                 return
             }
-            let profile = user?.phoneNumber
+            self.performSegue(withIdentifier: "onboardingSegue", sender: nil)
         }
         
     }
