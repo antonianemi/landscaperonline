@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F846F9EF9D7CC91D2061AF78 /* Pods_landscaperonline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230929C7E0F410F8C3ABB829 /* Pods_landscaperonline.framework */; };
-		FA2A9F4320D1FDD300EA6262 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2A9F4220D1FDD300EA6262 /* Onboarding.storyboard */; };
 		FA2A9F4620D2049B00EA6262 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9F4520D2049A00EA6262 /* BaseViewController.swift */; };
 		FA2A9F4820D209E000EA6262 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A9F4720D209E000EA6262 /* UIImage.swift */; };
 		FA5BE0CB20D3098700D61581 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BE0CA20D3098700D61581 /* UIView.swift */; };
@@ -22,13 +21,15 @@
 		FAA36F8D20CE14FC00228386 /* VCMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA36F8C20CE14FC00228386 /* VCMain.swift */; };
 		FAA36F8F20CE237E00228386 /* VCSingUP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA36F8E20CE237E00228386 /* VCSingUP.swift */; };
 		FAA36F9220CE31B100228386 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA36F9120CE31B100228386 /* Button.swift */; };
+		FAB039B520E159FA00073711 /* TVCOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB039B420E159FA00073711 /* TVCOperations.swift */; };
+		FAB039B720E15A3D00073711 /* VCOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB039B620E15A3D00073711 /* VCOperations.swift */; };
+		FAB039B920E15CD500073711 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB039B820E15CD500073711 /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		230929C7E0F410F8C3ABB829 /* Pods_landscaperonline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_landscaperonline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		345299F64C3D548C94303294 /* Pods-landscaperonline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-landscaperonline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-landscaperonline/Pods-landscaperonline.debug.xcconfig"; sourceTree = "<group>"; };
 		C6B5F2569B4624DF0E4C84FC /* Pods-landscaperonline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-landscaperonline.release.xcconfig"; path = "Pods/Target Support Files/Pods-landscaperonline/Pods-landscaperonline.release.xcconfig"; sourceTree = "<group>"; };
-		FA2A9F4220D1FDD300EA6262 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		FA2A9F4520D2049A00EA6262 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FA2A9F4720D209E000EA6262 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		FA5BE0CA20D3098700D61581 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -44,6 +45,9 @@
 		FAA36F8C20CE14FC00228386 /* VCMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMain.swift; sourceTree = "<group>"; };
 		FAA36F8E20CE237E00228386 /* VCSingUP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSingUP.swift; sourceTree = "<group>"; };
 		FAA36F9120CE31B100228386 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		FAB039B420E159FA00073711 /* TVCOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCOperations.swift; sourceTree = "<group>"; };
+		FAB039B620E15A3D00073711 /* VCOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCOperations.swift; sourceTree = "<group>"; };
+		FAB039B820E15CD500073711 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		FA2A9F4420D2047200EA6262 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FAB039B620E15A3D00073711 /* VCOperations.swift */,
 				FA2A9F4520D2049A00EA6262 /* BaseViewController.swift */,
 				FA62D4A020CDD97700459150 /* VCLogIn.swift */,
 				FAA36F8C20CE14FC00228386 /* VCMain.swift */,
@@ -90,6 +95,7 @@
 		FA62D49220CDD97700459150 = {
 			isa = PBXGroup;
 			children = (
+				FAB039B320E159BE00073711 /* cells */,
 				FA2A9F4420D2047200EA6262 /* ViewControllers */,
 				FAA36F9020CE2EDF00228386 /* extensions */,
 				FA62D49D20CDD97700459150 /* landscaperonline */,
@@ -114,7 +120,6 @@
 				FA62D4A220CDD97700459150 /* Main.storyboard */,
 				FA62D4A520CDD97800459150 /* Assets.xcassets */,
 				FA62D4A720CDD97800459150 /* LaunchScreen.storyboard */,
-				FA2A9F4220D1FDD300EA6262 /* Onboarding.storyboard */,
 				FA62D4AA20CDD97800459150 /* Info.plist */,
 				FA62D4B020CDDBDF00459150 /* GoogleService-Info.plist */,
 			);
@@ -127,8 +132,17 @@
 				FAA36F9120CE31B100228386 /* Button.swift */,
 				FA2A9F4720D209E000EA6262 /* UIImage.swift */,
 				FA5BE0CA20D3098700D61581 /* UIView.swift */,
+				FAB039B820E15CD500073711 /* UIImageView.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		FAB039B320E159BE00073711 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAB039B420E159FA00073711 /* TVCOperations.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +207,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA62D4A920CDD97800459150 /* LaunchScreen.storyboard in Resources */,
-				FA2A9F4320D1FDD300EA6262 /* Onboarding.storyboard in Resources */,
 				FA62D4B120CDDBDF00459150 /* GoogleService-Info.plist in Resources */,
 				FA62D4A620CDD97800459150 /* Assets.xcassets in Resources */,
 				FA62D4A420CDD97700459150 /* Main.storyboard in Resources */,
@@ -268,9 +281,12 @@
 				FA5BE0CB20D3098700D61581 /* UIView.swift in Sources */,
 				FAA36F9220CE31B100228386 /* Button.swift in Sources */,
 				FAA36F8F20CE237E00228386 /* VCSingUP.swift in Sources */,
+				FAB039B520E159FA00073711 /* TVCOperations.swift in Sources */,
+				FAB039B920E15CD500073711 /* UIImageView.swift in Sources */,
 				FA62D4A120CDD97700459150 /* VCLogIn.swift in Sources */,
 				FA5BE0CD20D30A7100D61581 /* VCPicture.swift in Sources */,
 				FA62D49F20CDD97700459150 /* AppDelegate.swift in Sources */,
+				FAB039B720E15A3D00073711 /* VCOperations.swift in Sources */,
 				FAA36F8D20CE14FC00228386 /* VCMain.swift in Sources */,
 				FA2A9F4620D2049B00EA6262 /* BaseViewController.swift in Sources */,
 				FA2A9F4820D209E000EA6262 /* UIImage.swift in Sources */,

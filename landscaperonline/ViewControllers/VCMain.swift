@@ -18,6 +18,15 @@ class VCMain: BaseViewController {
     @IBAction func logUp(_ sender: Any) {
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "singUpSegue"{
+            //navigationItem.backBarButtonItem
+        }
+        else{
+            
+        }
+    }
 
 }
 

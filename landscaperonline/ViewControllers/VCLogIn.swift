@@ -14,8 +14,6 @@ class VCLogIn: BaseViewController {
         super.viewDidLoad()
         btn_LogIn.setFirstStyle()
     }
-    
-    
     @IBAction func logIn(_ sender: Any) {
         guard let username = txt_username.text,let password = txt_password.text else{ return }
         Auth.auth().signIn(withEmail: username, password: password) { (user, error) in
