@@ -317,7 +317,6 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="67.5" height="125.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="67.5" id="EAX-IE-r3r"/>
-                                                                <constraint firstAttribute="height" constant="67.5" id="FYc-tA-zhh"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwq-NM-pgF">
