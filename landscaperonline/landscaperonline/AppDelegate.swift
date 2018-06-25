@@ -14,7 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        UINavigationBar.appearance().backgroundColor = UIColor.clear
+        
+        UINavigationBar.appearance().backgroundColor = UIColor.blue
+        if let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView {
+            statusBar.backgroundColor = UIColor.blue
+        }
         return true
     }
     func applicationWillResignActive(_ application: UIApplication) {
