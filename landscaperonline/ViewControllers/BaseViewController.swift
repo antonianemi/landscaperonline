@@ -7,10 +7,16 @@
 //
 
 import UIKit
-
-
-
+import Firebase
 class BaseViewController: UIViewController {
-
-
+    func handleError(error:NSError){
+        if let errCode = AuthErrorCode(rawValue: error._code) {
+            switch errCode {
+            case .userNotFound:
+                print("There is not a user register with these credentials")
+            default:
+                print("Login User Error)")
+            }
+        }
+    }
 }

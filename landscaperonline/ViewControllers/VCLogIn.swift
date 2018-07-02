@@ -17,8 +17,13 @@ class VCLogIn: BaseViewController {
     @IBAction func logIn(_ sender: Any) {
         guard let username = txt_username.text,let password = txt_password.text else{ return }
         Auth.auth().signIn(withEmail: username, password: password) { (user, error) in
-            if error != nil { return }
+            if error != nil {
+                self.handleError(error: error! as NSError)
+            } else {
+                print("all good... continue")
+            }
         }
     }
+    
 }
 
