@@ -30,7 +30,8 @@ class VCMain: BaseViewController {
 
 }
 
-extension VCMain{
+extension VCMain {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         btn_login.setNormalStyle()

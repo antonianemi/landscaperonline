@@ -12,7 +12,7 @@ class VCLogIn: BaseViewController {
     @IBOutlet weak var btn_LogIn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        btn_LogIn.setFirstStyle()
+        btn_LogIn.setNormalStyle()
     }
     @IBAction func logIn(_ sender: Any) {
         guard let username = txt_username.text,let password = txt_password.text else{ return }
@@ -20,10 +20,8 @@ class VCLogIn: BaseViewController {
             if error != nil {
                 self.handleError(error: error! as NSError)
             } else {
-                print("all good... continue")
+                self.performSegue(withIdentifier: "segueOperations", sender: nil)
             }
         }
     }
-    
 }
-

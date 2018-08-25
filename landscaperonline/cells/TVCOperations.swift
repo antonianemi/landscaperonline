@@ -9,18 +9,13 @@
 import UIKit
 
 class TVCOperations: UITableViewCell {
-    @IBOutlet weak var img_Operation: UIImageView!
     @IBOutlet weak var lbl_OperationName: UILabel!
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        img_Operation.setStyleOperation()
+        //img_Operation.setStyleOperation()
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
 
