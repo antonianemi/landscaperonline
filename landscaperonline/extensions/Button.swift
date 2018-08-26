@@ -10,7 +10,7 @@ import UIKit
 extension UIButton {
     func setNormalStyle(){
         self.layer.backgroundColor = UIColor.clear.cgColor
-        self.layer.borderColor = UIColor.white.cgColor
+        self.layer.borderColor = UIColor.orange.cgColor
         self.layer.borderWidth = 2
         self.layer.cornerRadius = 10
         self.clipsToBounds = true
